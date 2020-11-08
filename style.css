@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+		
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+    background: url("./trail1.gif");
+  animation-play-state:running;
+  background-repeat: no-repeat;
+background-size: 100vw 100vh;
+
+
+}
+
+  /*.side3 {
+position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+    width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  background: url("./blurred1.png");
+  	 background-repeat: no-repeat;
+
+
+}
+.side{
+	position:relative;
+	float:left;
+display:flex;
+	margin-left: 10px;
+	min-height: 18vh;
+    width: 15rem;
+		transform: translateY(10px) rotate(+16deg);
+
+}
+.side1{
+	position:relative;
+	float:right;
+	margin-left: 10px;
+	min-height: 18vh;
+    width: 10rem;
+		transform: translateY(10px) rotate(-16deg);
+
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  /*background: url("./ballon.gif");
+  animation-play-state:running;
+  	 background-repeat: no-repeat;
+	     background-size: cover;*/
+		 
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  width: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+  margin-left: 120px;
+  position: relative;
+  top: 18px;
+  padding:4px;
+   
+  
+}
+.info img {
+  width: 7rem;
+  z-index: 2;
+  border-radius: 100%;
+  transition: all 0.75s ease-out;
+  float: left; 
+  
+}	
+.info h3 {
+  font-size: 1.1rem;
+  padding: 2rem 0rem;
+  color: #ff0000;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+
+}
+.sizes button:hover{
+	background :grey;
+	color:white;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #101820FF;
+  color: #F2AA4CFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #101820FF;
+  color: #F2AA4CFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+button:hover .first {display:none}
+#new:hover:before {content:"Click me 👆"}
+button:hover .second {display:none}
+#new1:hover:before {content:"Click me 👆"}
