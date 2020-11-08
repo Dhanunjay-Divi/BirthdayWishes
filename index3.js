@@ -527,5 +527,5 @@ function myPlay() {
 }, second);
 function nextpage(){
 	
-     location.href = "./index1.html";
+     location.href = "./blast.html";
     };
