@@ -6,7 +6,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 const button_surprise = document.getElementById("merrywrap"); 
 const config = {
-  birthdate: 'Nov 10, 2020',
+  birthdate: 'Nov 09, 2020',
   name: 'Ammu'
 };
 button_surprise.onclick = function() {buttonsbox()};
@@ -39,7 +39,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
+let countDown = new Date(`${config.birthdate} 04:16:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
