@@ -449,6 +449,16 @@ margin: -50px 0px 0px -50px;
 
 
   }
+#memories{
+	  position: absolute;
+	width:18rem;
+
+top: 43%;
+left: 36%;
+margin: -50px 0px 0px -50px;
+  transform: translateY(10px) rotate(-10deg);
+
+  }
 
   div#beach {
     background-size: 2000px;
