@@ -6,7 +6,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 const button_surprise = document.getElementById("merrywrap"); 
 const config = {
-  birthdate: 'Nov 9, 2020',
+  birthdate: 'Nov 9, 2021',
   name: 'Ammu'
 };
 button_surprise.onclick = function() {buttonsbox()};
